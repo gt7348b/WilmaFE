@@ -92,31 +92,38 @@ li {
   position: relative;
   text-align: center;
 
-  ul{
-    display:none;
-      }
+  .tg  {
+    border-collapse:collapse;
+    border-spacing:0;
     }
 
-  td{
-    border: 2px solid $color6;
-  }
+  .tg td{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    }
 
- .box:hover{
-    opacity: 1;
-    ul {
-      display:block;
-        }
-      }
+  .tg th{
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    }
+}  
 
 
 .click {
   width: 200px;
-  height: auto;
   border-top: 3px solid $color1;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
-  background-color: $color2;
+  opacity: 0.5;
 }
 
   img {
