@@ -43,7 +43,7 @@ button {
 
 .Title{
   margin: 50px auto 0 auto;
-  color: $color1;
+  color: $color4;
   text-align: center;
 }
 
@@ -61,6 +61,11 @@ button {
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
+  }
+
+  h3 {
+    font-color: white;
+    text-alignment: center;
   }
 }
 
@@ -91,9 +96,6 @@ li {
   height: auto;
   position: relative;
   text-align: center;
-
-
-
 }
 
 .tg  {
@@ -106,7 +108,7 @@ li {
   font-size:14px;
   padding:10px 5px;
   border-style:solid;
-  border-width:1px;
+  border-width:2px;
   overflow:hidden;
   word-break:normal;
   }
@@ -117,7 +119,7 @@ li {
   font-weight:normal;
   padding:10px 5px;
   border-style:solid;
-  border-width:10px;
+  border-width:2px;
   border-color: $color2;
   overflow:hidden;
   word-break:normal;
