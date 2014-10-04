@@ -68,13 +68,15 @@ li {
 }
 
 .box {
-  width: $std325;
-  height: $std325;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   position: relative;
 }
 
 .box {
+
+  text-align: center;
 
   img {
     height: 100%;
