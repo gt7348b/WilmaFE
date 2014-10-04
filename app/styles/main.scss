@@ -7,11 +7,11 @@
 //colors
 
 $color1: black;
-$color2: red;
-$color3: white;
-$color4: white;
-$color5: white;
-$color6: white;
+$color2: e20017;  //Red
+$color3: #1a92d8; //Blue
+$color4: #77d624; //Green
+$color5: #fc8e28; //Orange
+$color6: #bf62e6; //Purple
 $color7: white;
 $color8: white;
 $color0: white;
@@ -28,17 +28,23 @@ $std28:   28px;
 
 // Custom Styles
 
-* {
+/* {
   border: 1px solid black;
-}
+}*/
 
 body {
-
+  background-color: $color3;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 button {
   @include button(shiny, #ff0000);
+}
+
+.Title{
+  margin: 50px auto 0 auto;
+  color: $color1;
+  text-align: center;
 }
 
 .main {
@@ -47,7 +53,7 @@ button {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  background-color: #eee;
+  background-color: $color4;
   border-radius: 6px;
   padding: 60px;
 
@@ -91,12 +97,17 @@ li {
       }
     }
 
+  td{
+    border: 2px solid $color6;
+  }
+
  .box:hover{
     opacity: 1;
     ul {
       display:block;
         }
       }
+
 
 .click {
   width: 200px;
@@ -106,11 +117,6 @@ li {
   font-weight: bold;
   line-height: 30px;
   background-color: $color2;
-  padding: 0px;
-  text-align: left;
-  transition-property: height background-color;
-  transition-duration: 4s;
-  overflow: hidden;
 }
 
   img {
@@ -119,7 +125,9 @@ li {
   }
 
 
-  p.text {
+
+
+/*  p.text {
   color: blue;
   position: absolute;
   top: 10;
@@ -129,7 +137,7 @@ li {
   text-transform: uppercase;
   font-weight: bold;
   }
-
+*/
 
 .name {
 
@@ -142,10 +150,6 @@ li {
 
 .email {
 
-
-}
-
-.buttons {
 
 }
 
