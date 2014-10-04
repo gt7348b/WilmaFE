@@ -100,7 +100,7 @@ li {
       }
 
 .click {
-  width: auto;
+  width: 200px;
   height: auto;
   border-top: 3px solid $color1;
   font-size: 18px;
@@ -121,10 +121,10 @@ li {
 
 
   p.text {
-  color: white;
+  color: blue;
   position: absolute;
-  top: 50px;
-  left: 20px;
+  bottom: 0;
+  left: 0;
   padding: 0;
   font-size: 12px;
   text-transform: uppercase;
@@ -148,4 +148,41 @@ li {
 
 .buttons {
 
+}
+
+
+.Base {
+  background-color: $color1;
+  color: $color3;
+  height: 74px;
+  font-size: 1px2;
+}
+
+.BaseLeft {
+  float: left;
+  position: relative;
+  padding-top: 1%;
+  padding-left: 10%
+}
+
+.BaseLeft li {
+  vertical-align: middle;
+}
+
+.BaseRight {
+  float: right;
+  position: relative;
+  padding-top: 2.5%;
+  padding-right: 10%;
+}
+
+.Innerbox {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid $color3;
+}
+
+.Endbox {
+  padding-left: 10px;
+  padding-right: 10px;
 }
