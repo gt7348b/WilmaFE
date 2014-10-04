@@ -54,11 +54,12 @@ button {
 .button {
   text-align:center;
 }
+
 .tableoutline{
 
 }
 
-uul {
+ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
@@ -72,15 +73,22 @@ li {
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   position: relative;
   text-align: center;
   opacity: 0.2;
+  ul{
+    display:none;
+      }
     }
+
 
  .box:hover{
     opacity: 1;
+    ul {
+      display:block;
+        }
       }
 
 
@@ -117,6 +125,5 @@ li {
 }
 
 .buttons {
-
 
 }
