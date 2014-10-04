@@ -6,7 +6,7 @@
 
 //colors
 
-$color1: blue;
+$color1: black;
 $color2: red;
 
 //heights
@@ -51,6 +51,9 @@ button {
   }
 }
 
+.button {
+  text-align:center;
+}
 .tableoutline{
 
 }
@@ -72,10 +75,6 @@ li {
   height: 200px;
   overflow: hidden;
   position: relative;
-}
-
-.box {
-
   text-align: center;
 
   img {
