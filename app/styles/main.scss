@@ -2,9 +2,10 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+
 //Mixins
-$visual-grid: true !default;
-$visual-grid-color: #EEE !default;
+
+
 // Custom Styles
 
 * {
@@ -21,7 +22,7 @@ button {
 }
 
 .main {
-  @include outer-container;
+
   margin: 50px auto 0 auto;
   font-size: 18px;
   font-weight: 200;
@@ -38,8 +39,7 @@ button {
 }
 
 .tableoutline{
-  @include span-columns(12);
-  @include row(table);
+
 }
 
 .ul {
