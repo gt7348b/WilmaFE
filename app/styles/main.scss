@@ -83,7 +83,7 @@ li {
 .box {
   width: 200px;
   height: auto;
-  position: absolute;
+  position: relative;
   text-align: center;
   opacity: 0.2;
 
@@ -150,6 +150,14 @@ li {
 
 }
 
+//Submit button formating
+
+.Submit{
+  clear: both;
+  text-align: center;
+}
+
+//Base formating
 
 .Base {
   background-color: $color1;
