@@ -2,6 +2,19 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+//Standards
+
+//colors
+
+$color1: blue;
+$color2: red;
+
+//heights
+
+$std325:  325px;
+$std28:   28px;
+
+
 
 //Mixins
 
@@ -52,6 +65,33 @@ li {
   display: inline-block;
   padding: 0px;
   margin: 0px;
+}
+
+.box {
+  width: $std325;
+  height: $std325;
+  overflow: hidden;
+  position: relative;
+}
+
+.box {
+
+  img {
+    height: $std325;
+
+  }
+
+
+  p.text {
+  color: $color1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  font-size: $std28;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
 }
 
 .name {
