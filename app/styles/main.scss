@@ -8,6 +8,13 @@
 
 $color1: black;
 $color2: red;
+$color3: white;
+$color4: white;
+$color5: white;
+$color6: white;
+$color7: white;
+$color8: white;
+$color0: white;
 
 //heights
 
@@ -74,15 +81,15 @@ li {
 
 .box {
   width: 200px;
-  height: 200px;
+  height: auto;
   position: relative;
   text-align: center;
   opacity: 0.2;
+
   ul{
     display:none;
       }
     }
-
 
  .box:hover{
     opacity: 1;
@@ -91,6 +98,20 @@ li {
         }
       }
 
+.click {
+  width: 400px;
+  height: 320px;
+  border-top: 3px solid $color1;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: $color2;
+  padding: 0px;
+  text-align: left;
+  transition-property: height background-color;
+  transition-duration: 4s;
+  overflow: hidden;
+}
 
   img {
     height: 100%;
