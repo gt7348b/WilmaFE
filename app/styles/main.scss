@@ -73,10 +73,10 @@ li {
 .box {
   width: 200px;
   height: 200px;
-  overflow: hidden;
   position: relative;
   text-align: center;
-  overflow: visible;
+    }
+
 
   img {
     height: 100%;
@@ -94,6 +94,15 @@ li {
   text-transform: uppercase;
   font-weight: bold;
   }
+
+
+.Button {
+    overflow: hidden;
+
+    :hover {
+    opacity: .4;
+    height: 500px;
+    }
 }
 
 .name {
