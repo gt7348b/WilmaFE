@@ -2,25 +2,268 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+//Standards
+
+//colors
+
+$color1: black;
+$color2: e20017;  //Red
+$color3: #1a92d8; //Blue
+$color4: #77d624; //Green
+$color5: #fc8e28; //Orange
+$color6: #bf62e6; //Purple
+$color7: white;
+$color8: white;
+$color0: white;
+
+//heights
+
+$std325:  325px;
+$std28:   28px;
+
+$fontfamily2: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+//Mixins
+
+
 // Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+
+* {
+  border: 1px solid black;
 }
 
-.hero-unit {
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Header li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Title {
+  font-size: 50px;
+  color: hsla(205, 100%, 100%, 1);
+  padding-top: 222px;
+  margin-bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Subtitle {
+  font-size: 24px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.HeaderLeft {
+  float: left;
+  position: relative;
+  top: 3%;
+  left: 50px;
+  text-transform: uppercase;
+}
+
+.HeaderRight {
+  float: right;
+  position: relative;
+  top: 24px;
+  right: 50px;
+  font-family:$fontfamily2;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $color1;
+  }
+}
+
+button {
+  @include button(shiny, #ff0000);
+}
+
+.Title{
   margin: 50px auto 0 auto;
-  width: 600px;
+  color: $color4;
+  text-align: center;
+}
+
+.HeaderRight {
+  float: right;
+  position: relative;
+  top: 24px;
+  right: 50px;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $color1;
+  }
+}
+.main {
+
+  margin: 50px auto 0 auto;
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  background-color: #eee;
+  background-color: $color4;
   border-radius: 6px;
   padding: 60px;
+
   h1 {
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  h2{
+    padding-right: 10px;
+  }
+
+  h3 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.button {
+  text-align:center;
+  clear: both;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  overflow:hidden;
+}
+
+.box {
+  width: 200px;
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+  }
+
+.tg td{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:2px;
+  overflow:hidden;
+  word-break:normal;
+  }
+
+.tg th{
+  font-family:Arial, sans-serif;
+  font-size:14px;
+  font-weight:normal;
+  padding:10px 5px;
+  border-style:solid;
+  border-width:2px;
+  border-color: $color2;
+  overflow:hidden;
+  word-break:normal;
+  }
+
+.click {
+  width: 200px;
+  border-top: 3px solid $color1;
+  opacity: 0.5;
+}
+
+  img {
+    height: 100%;
+    width: 100%
+  }
+
+.checkbox{
+  margin: 0;
+}
+
+
+/*  p.text {
+  color: blue;
+  position: absolute;
+  top: 10;
+  left: 0;
+  padding: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+*/
+
+.name {
+
+}
+
+.Phone {
+
+
+}
+
+.email {
+
+
+}
+
+//Submit button formating
+
+.Submit{
+  clear: both;
+  text-align: center;
+}
+
+//Base formating
+
+.Base {
+  background-color: $color1;
+  color: $color3;
+  height: 74px;
+  font-size: 1px2;
+}
+
+.BaseLeft {
+  float: left;
+  position: relative;
+  padding-top: 1%;
+  padding-left: 10%
+}
+
+.BaseLeft li {
+  vertical-align: middle;
+}
+
+.BaseRight {
+  float: right;
+  position: relative;
+  padding-top: 2.5%;
+  padding-right: 10%;
+}
+
+.Innerbox {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid $color3;
+}
+
+.Endbox {
+  padding-left: 10px;
+  padding-right: 10px;
 }
