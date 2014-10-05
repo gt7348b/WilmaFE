@@ -7,12 +7,12 @@
 //colors
 
 $color1: black;
-$color2: e20017;  //Red
+$color2: #e20017;  //Red
 $color3: #1a92d8; //Blue
 $color4: #77d624; //Green
 $color5: #fc8e28; //Orange
 $color6: #bf62e6; //Purple
-$color7: white;
+$color7: #faf333; //Yellow
 $color8: white;
 $color0: white;
 
@@ -50,7 +50,7 @@ body {
 }
 
 .Title {
-  font-size: 50px;
+  font-size: 100px;
   margin: 0px auto 0 auto;
   color: $color4;
   text-align: center;
@@ -104,10 +104,6 @@ body {
   }
 }
 
-button {
-  @include button(shiny, #ff0000);
-}
-
 
 .HeaderRight {
   float: right;
@@ -136,6 +132,8 @@ button {
   .user {
     background-color: $color3;
     margin: 15px auto 0 auto;
+    border-radius: 15px;
+    border: 1px solid $color5;
   }
 
   h1 {
@@ -152,8 +150,9 @@ button {
   }
 
   h3 {
-    color: white;
+    color: $color2;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -256,6 +255,12 @@ li {
 .Submit{
   clear: both;
   text-align: center;
+  margin: 25px;
+}
+
+button {
+  @include button(shiny, #ff0000);
+  padding: 45px;
 }
 
 //Base formating
