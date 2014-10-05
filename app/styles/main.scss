@@ -29,9 +29,9 @@ $fontfamily2: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Custom Styles
 
-* {
+/* {
   border: 1px solid black;
-}
+} */
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -219,17 +219,11 @@ li {
 }
 
 
-/*  p.text {
-  color: blue;
-  position: absolute;
-  top: 10;
-  left: 0;
-  padding: 0;
-  font-size: 12px;
-  text-transform: uppercase;
+   p.text {
+  background-color: $color2;
   font-weight: bold;
   }
-*/
+
 
 .name {
 
