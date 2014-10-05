@@ -22,40 +22,52 @@
     <!-- endbuild -->
   </head>
   <body>
+<!-- Header Content -->
 
-    <div class="HeaderRight">
+      <div class="Header">
+        <div class="HeaderLeft">
           <ul>
             <li>
-              <a href="http://www.theironyard.com">
+              <a href="http://www.awkwardtransit.com">
+                WILMA's BLOG
+              </a>
+            </li>
+            <li> <img src="http://www.happyworker.com/files/image/wilma.jpg">
+            </li>
+          </ul>
+        </div>
+        <div class="HeaderRight">
+          <ul>
+            <li>
+              <a href="http://www.theonion.com">
                 ABOUT
               </a>
             </li>
             <li>
               <a href="http://www.google.com">
                 SEARCH
-                </a>
+                <img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/search-icon.png">
+              </a>
             </li>
           </ul>
+        </div>
+        <h1 class="Title">WILMA!!</h1>
+        <h2 class="Subtitle">The Perfect way to know when you're needed!<h2>
       </div>
 
-<h1 class= "Title">WILMA!!</h1>
-
-<h2 class="Title">The Perfect way to know when you're needed!<h2>
-
-
     <div class="main">
+
       <div class="user">
-        <h2>ID: </h1>
+        <h2>ID: <span id="Username"></span></h1>
         <br>
-        <h2>Device:</h2>
+        <h2>Device: <span id="Device"></span></h2>
       </div>
 
 
         <div class="button_coverbox">
           <h3>Select ALERTS!!!</h3>
           <p>Just select the alerts you want from the list below and enter in the name and contact information of who should get the alert if needed. </p>
-        <ul>
-           <li class="Button" id="Button1">
+
 
 <table class="tg">
   <tr>
@@ -65,14 +77,31 @@
                 <div>
       <img src="http://emfsafetynetwork.org/wp-content/uploads/2011/05/help.jpg" />
                   <p class="text">HELP!</p>
-                  <div class="box">
-                           <input type="checkbox"><p>High</p>
-                           <input type="checkbox"><p>Medium</p>
-                           <input type="checkbox"><p>Low</p>
-                            <div>
+                  <div class="littlebox">
+                       <ul class="prioritylist">
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>High</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Medium</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Low</p>
+                         </li>
+                       </ul>
+                    <div>
     </th>
     <th class="tg-031e">
-      Who's getting this message?
+      <h2>Who's getting this message?</h2>
       <ul>
           <li class="Contact1">
              <li class="Name">
@@ -90,7 +119,9 @@
                  Email: <input type="text" name="firstname">
                </form>
              </li>
-           </li><li class="Contact2">
+           </li>
+           <br>
+           <li class="Contact2">
               <li class="Name">
                 <form>
                   Name: <input type="text" name="firstname">
@@ -106,7 +137,9 @@
                   Email: <input type="text" name="firstname">
                 </form>
               </li>
-            </li><li class="Contact3">
+            </li>
+            <br>
+            <li class="Contact3">
                <li class="Name">
                  <form>
                    Name: <input type="text" name="firstname">
@@ -123,26 +156,45 @@
                  </form>
                </li>
              </li>
+             <br>
           </ul>
+        </div>
     </th>
   </tr>
   <tr>
-    <td class="tg-031e">
+    <th class="tg-031e">
       <div class="box">
                <input type="checkbox">
                 <div>
                   <img src="http://img1.wikia.nocookie.net/__cb20100815233927/creepypasta/images/4/4f/Creepy-van.jpg" />
                  <p class="text">STRANGER DANGER</p>
-                <div class="box">
-                         <input type="checkbox"><p>High</p>
-                         <input type="checkbox"><p>Medium</p>
-                         <input type="checkbox"><p>Low</p>
-                          <div>
+                <div class="littlebox">
+                       <ul class="prioritylist">
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>High</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Medium</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Low</p>
+                         </li>
+                       </ul>
+                    <div>
     </td>
 
                </div>
-    <td class="tg-031e"><ul>
-                   Who's getting this message?
+    <td class="th-031e"><ul>
+                   <h2>Who's getting this message?</h2>
                    <ul>
                        <li class="Contact1">
                           <li class="Name">
@@ -160,7 +212,9 @@
                               Email: <input type="text" name="firstname">
                             </form>
                           </li>
-                        </li><li class="Contact2">
+                        </li>
+                        <br>
+                        <li class="Contact2">
                            <li class="Name">
                              <form>
                                Name: <input type="text" name="firstname">
@@ -176,7 +230,9 @@
                                Email: <input type="text" name="firstname">
                              </form>
                            </li>
-                         </li><li class="Contact3">
+                         </li>
+                         <br>
+                         <li class="Contact3">
                             <li class="Name">
                               <form>
                                 Name: <input type="text" name="firstname">
@@ -193,24 +249,43 @@
                               </form>
                             </li>
                           </li>
+                          <br>
                        </ul>
                  </td>
   </tr>
   <tr>
-    <td class="tg-031e">
+    <td class="th-031e">
       <div class="box">
                <input type="checkbox">
                 <div>
                   <img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/article-image-3.jpg" />
-                 <p class="text"><p>PLEASE COME GET ME!!</p>
-                <div class="box">
-                         <input type="checkbox"><p>High</p>
-                         <input type="checkbox"><p>Medium</p>
-                         <input type="checkbox"><p>Low</p>
+                 <p class="text">PLEASE COME GET ME!!</p>
+                 <div class="littlebox">
+                       <ul class="prioritylist">
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>High</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Medium</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Low</p>
+                         </li>
+                       </ul>
+                    <div>
                           <div>
     </td>
-    <td class="tg-031e">
-      Who's getting this message?
+    <td class="th-031e">
+      <h2>Who's getting this message?</h2>
       <ul>
           <li class="Contact1">
              <li class="Name">
@@ -228,7 +303,9 @@
                  Email: <input type="text" name="firstname">
                </form>
              </li>
-           </li><li class="Contact2">
+           </li>
+           <br>
+           <li class="Contact2">
               <li class="Name">
                 <form>
                   Name: <input type="text" name="firstname">
@@ -244,7 +321,9 @@
                   Email: <input type="text" name="firstname">
                 </form>
               </li>
-            </li><li class="Contact3">
+            </li>
+            <br>
+            <li class="Contact3">
                <li class="Name">
                  <form>
                    Name: <input type="text" name="firstname">
@@ -261,6 +340,7 @@
                  </form>
                </li>
              </li>
+             <br>
           </ul>
     </td>
   </tr>
@@ -271,14 +351,31 @@
                 <div>
                   <img src="http://media.tumblr.com/tumblr_lpoqltvVwF1qf6o78.gif" />
       <p class="text">I'VE FALLEN</p>
-      <div class="box">
-               <input type="checkbox"><p>High</p>
-               <input type="checkbox"><p>Medium</p>
-               <input type="checkbox"><p>Low</p>
-                <div>
+      <div class="littlebox">
+                       <ul class="prioritylist">
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>High</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Medium</p>
+                         </li>
+                         <li>
+                           <input type="checkbox">
+                         </li>
+                         <li>
+                           <p>Low</p>
+                         </li>
+                       </ul>
+                    <div>
     </td>
     <td class="tg-031e"><ul>
-            Who's getting this message?
+            <h2>Who's getting this message?</h2>
             <ul>
                 <li class="Contact1">
                    <li class="Name">
@@ -349,7 +446,7 @@
       <div class="BaseLeft">
           <ul>
             <li>
-              <img src="https://raw.githubusercontent.com/tiy-atlanta-js/Assignments/master/Assignment%2003/assets/theironyard-logo.png">
+              <img src="https://scontent-b.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/546321_3700502717555_1022847220_n.jpg?oh=9a9df25dff104222106a33de3cac01a5&oe=54D1593B">
             </li>
             <li>Wilma Copyright 2013, All Rights Reserved
             </li>

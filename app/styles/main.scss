@@ -7,12 +7,12 @@
 //colors
 
 $color1: black;
-$color2: e20017;  //Red
+$color2: #e20017;  //Red
 $color3: #1a92d8; //Blue
 $color4: #77d624; //Green
 $color5: #fc8e28; //Orange
 $color6: #bf62e6; //Purple
-$color7: white;
+$color7: #faf333; //Yellow
 $color8: white;
 $color0: white;
 
@@ -22,29 +22,87 @@ $std325:  325px;
 $std28:   28px;
 
 
+$fontfamily2: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 //Mixins
 
 
 // Custom Styles
 
-* {
+/* {
   border: 1px solid black;
-}
+} */
 
 body {
-  background-color: $color3;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-button {
-  @include button(shiny, #ff0000);
+
+
+.Header {
+  padding-top:50px;
+
+
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
-.Title{
-  margin: 50px auto 0 auto;
+.Title {
+  font-size: 100px;
+  margin: 0px auto 0 auto;
   color: $color4;
   text-align: center;
+  padding-top: 100px;
+  text-transform: uppercase;
+}
+
+.Subtitle {
+  font-size: 24px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.HeaderLeft {
+  float: left;
+  position: relative;
+  top: 3%;
+  left: 50px;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $color1;
+  }
+
+  img {
+    height:30%;
+    width: 30%;
+  }
+
+}
+
+.HeaderRight {
+  float: right;
+  position: relative;
+  top: 24px;
+  right: 50px;
+  font-family:$fontfamily2;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $color1;
+  }
+
+  img {
+    height: 10px;
+    width: 10px;
+  }
 }
 
 .HeaderRight {
@@ -69,6 +127,14 @@ button {
   background-color: $color4;
   border-radius: 6px;
   padding: 60px;
+  border-top: 2px solid $color2;
+
+  .user {
+    background-color: $color3;
+    margin: 15px auto 0 auto;
+    border-radius: 15px;
+    border: 1px solid $color5;
+  }
 
   h1 {
     font-size: 60px;
@@ -77,12 +143,16 @@ button {
   }
 
   h2{
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
   }
 
   h3 {
-    color: white;
+    color: $color2;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
@@ -114,6 +184,11 @@ li {
 .tg  {
   border-collapse:collapse;
   border-spacing:0;
+
+  img{
+    border-radius: 15px;
+  }
+
   }
 
 .tg td{
@@ -124,6 +199,7 @@ li {
   border-width:2px;
   overflow:hidden;
   word-break:normal;
+  text-align: center;
   }
 
 .tg th{
@@ -146,7 +222,7 @@ li {
 
   img {
     height: 100%;
-    width: 100%
+    width: 100%;
   }
 
 .checkbox{
@@ -154,17 +230,11 @@ li {
 }
 
 
-/*  p.text {
-  color: blue;
-  position: absolute;
-  top: 10;
-  left: 0;
-  padding: 0;
-  font-size: 12px;
-  text-transform: uppercase;
+   p.text {
+  background-color: $color2;
   font-weight: bold;
   }
-*/
+
 
 .name {
 
@@ -185,6 +255,10 @@ li {
 .Submit{
   clear: both;
   text-align: center;
+
+button {
+  @include button(shiny, #ff0000);
+  padding: 45px;
 }
 
 //Base formating
@@ -200,7 +274,13 @@ li {
   float: left;
   position: relative;
   padding-top: 1%;
-  padding-left: 10%
+  padding-left: 10%;
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+  }
 }
 
 .BaseLeft li {
