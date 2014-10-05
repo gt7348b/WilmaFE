@@ -28,9 +28,9 @@ $std28:   28px;
 
 // Custom Styles
 
-/* {
+* {
   border: 1px solid black;
-}*/
+}
 
 body {
   background-color: $color3;
@@ -47,6 +47,19 @@ button {
   text-align: center;
 }
 
+.HeaderRight {
+  float: right;
+  position: relative;
+  top: 24px;
+  right: 50px;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $color1;
+  }
+}
 .main {
 
   margin: 50px auto 0 auto;
@@ -63,19 +76,19 @@ button {
     letter-spacing: -1px;
   }
 
+  h2{
+    padding-right: 10px;
+  }
+
   h3 {
-    font-color: white;
-    text-alignment: center;
+    color: white;
+    text-align: center;
   }
 }
 
 .button {
   text-align:center;
   clear: both;
-}
-
-.tableoutline{
-
 }
 
 ul {
@@ -136,7 +149,9 @@ li {
     width: 100%
   }
 
-
+.checkbox{
+  margin: 0;
+}
 
 
 /*  p.text {
