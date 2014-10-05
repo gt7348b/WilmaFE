@@ -51,7 +51,7 @@ body {
 }
 
 .Title {
-  font-size: 100px;
+  font-size: 50px;
   margin: 0px auto 0 auto;
   color: $color4;
   text-align: center;
@@ -61,34 +61,15 @@ body {
 
 .Subtitle {
   font-size: 24px;
+  color: $color3;
   margin-top: 0px;
   text-align: center;
-}
-
-.HeaderLeft {
-  float: left;
-  position: relative;
-  top: 3%;
-  left: 50px;
-  text-transform: uppercase;
-
-  a {
-    text-decoration: none;
-    font-size: 16px;
-    color: $color1;
-  }
-
-  img {
-    height:30%;
-    width: 30%;
-  }
-
 }
 
 .HeaderRight {
   float: right;
   position: relative;
-  top: 24px;
+  top: 3%;
   right: 50px;
   font-family:$fontfamily2;
   text-transform: uppercase;
@@ -303,4 +284,5 @@ button {
 .Endbox {
   padding-left: 10px;
   padding-right: 10px;
+}
 }
