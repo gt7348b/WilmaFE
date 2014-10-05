@@ -185,6 +185,11 @@ li {
 .tg  {
   border-collapse:collapse;
   border-spacing:0;
+
+  img{
+    border-radius: 15px;
+  }
+
   }
 
 .tg td{
@@ -266,7 +271,13 @@ li {
   float: left;
   position: relative;
   padding-top: 1%;
-  padding-left: 10%
+  padding-left: 10%;
+
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+  }
 }
 
 .BaseLeft li {
